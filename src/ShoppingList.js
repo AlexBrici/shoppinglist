@@ -19,19 +19,21 @@ class ShoppingList extends Component{
     <b><label> Pret: </label></b>
     {_list.price}
     <b> <label> Img: </label></b>
-    <img src={_list.img} height="60px" className="zoom" />
+    <img src={_list.img} height="60px" className="zoom2" alt="No input" />
     <input  listidx={index} type="checkbox" onClick={this.props.removeFunction.bind(this,index)} ></input>
     </li>)
   })
   
   return (
-    <div className="split right">
+    <div className="split right ">
       <div className="centered2">
-      <ul>
-        <ul>{listItems}</ul>
-      </ul>
+      
+      
+        <ol>{listItems}</ol>
+     
     </div>
     </div>
+    
   )
  }
 }

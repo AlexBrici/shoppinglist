@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import ShoppingList from './ShoppingList.js';
+
 
 
 class InputItem  extends Component {
@@ -37,7 +37,8 @@ class InputItem  extends Component {
        <input type="file" id="poza" className="file"  
        onChange={(event) => this.setState({ img: URL.createObjectURL(event.target.files[0])})} 
        /><br/>
-       <button type="submit" className="button">insert </button><br/>
+       <img height="60px" src={this.state.img} alt="Preview" className="zoom2"/><br/>
+       <button type="submit" className="button">Add item </button><br/>
        </form>
        </div>
        </div>
