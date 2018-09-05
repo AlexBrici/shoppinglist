@@ -19,7 +19,7 @@ class ShoppingList extends Component{
     <b><label> Pret: </label></b>
     {_list.price}
     <b> <label> Img: </label></b>
-    <img src={_list.img} height="60px" className="zoom2" alt="No input" />
+    <img src={_list.img} height="60px"  alt="No input"  className="zoom" />
     <input  
       type="image" 
       src="https://static.thenounproject.com/png/377968-200.png"
