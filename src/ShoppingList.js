@@ -20,7 +20,13 @@ class ShoppingList extends Component{
     {_list.price}
     <b> <label> Img: </label></b>
     <img src={_list.img} height="60px" className="zoom2" alt="No input" />
-    <input  listidx={index} type="checkbox" onClick={this.props.removeFunction.bind(this,index)} ></input>
+    <input  
+      type="image" 
+      src="https://static.thenounproject.com/png/377968-200.png"
+      onClick={this.props.removeFunction.bind(this,index)} 
+      width="35"
+      height="35">
+    </input>
     </li>)
   })
   

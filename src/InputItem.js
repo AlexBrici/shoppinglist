@@ -27,6 +27,7 @@ class InputItem  extends Component {
        <div className="split left">
        <div className="centered">
         <h1 id="example">Shopping List</h1>
+        <hr/>
        <form    onSubmit={this.handleSubmit}>
        <input type="text"  placeholder="nume" className="file example2"
         onChange={(event)=>{this.setState({name:event.target.value})}}/><br/>
