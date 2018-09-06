@@ -31,19 +31,14 @@ h1, h2 {
   font-family: Lato;
 }
 body {
-  background-color:rgb(101, 201, 159);
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0221/2149/rrwatermelon2-01_shop_preview.png") ;
   align-content: center;
+  /* -webkit-animation: mymove 20s infinite; 
+  animation: mymove 40s infinite;  */
 }
 
 
-.right{
-   right: 0;
-    background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0221/2149/rrwatermelon2-01_shop_preview.png") ;
-     -webkit-animation: mymove 10s infinite; 
-    animation: mymove 10s infinite; 
-    
- 
-}
+
 @-webkit-keyframes mymove {
     50% {background-position: center;}
 }
@@ -82,10 +77,16 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
 }
+.right{
+  right: 0;
+   /* background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0221/2149/rrwatermelon2-01_shop_preview.png") ; */
+   
+   
+}
 
 .left {
     left: 0;
-    background-color:rgb(1, 215, 39);
+    /* background-color:rgb(1, 215, 39); */
 }
 
 .centered {
@@ -152,6 +153,7 @@ body {
   margin: 0.5em;
   padding: 1em 2em;
   cursor: pointer;
+  
 }
 
 .button:hover{
@@ -159,9 +161,6 @@ body {
   
 }
 
-.file{
-   margin: 0.5em;
-}
 
 .example2 {
     border: 1px ;
@@ -169,6 +168,8 @@ body {
     box-shadow: 5px 5px #888888;
     border-color: red;
     border-radius: 50px;
+    outline: none;
+    margin: 0.5em;
     }
 
     #loader {
@@ -197,7 +198,9 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
+.file{
+  margin: 0.5em;
+}
 
 .animate-bottom {
   position: relative;

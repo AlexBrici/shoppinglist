@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import './App.css';
+ import './App.css';
 import ShoppingList from './ShoppingList.js';
 import InputItem from './InputItem.js'
+import styled from "styled-components"
 
-
+const Tot=styled.body `
+background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0221/2149/rrwatermelon2-01_shop_preview.png") ;
+align-content: center;
+`
 
 class App extends Component {
  state={
@@ -35,10 +39,12 @@ class App extends Component {
     console.log(this.state.list.img)
     
     return (
+      <Tot>
       <div>
       <InputItem addFunction={this.addItem} />
       <ShoppingList list={this.state.list}  removeFunction={this.removeItem} />
       </div>
+      </Tot>
     );
   }
 }
