@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import styled from "styled-components"
 
+
 const Right= styled.div`
     height: 100%;
     width: 50%;
